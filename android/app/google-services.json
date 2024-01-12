@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093407967492",
+    "project_id": "motion-mingle-19652",
+    "storage_bucket": "motion-mingle-19652.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093407967492:android:e784b4c37f1d3342ae6851",
+        "android_client_info": {
+          "package_name": "com.example.motionminglee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRlRCfGFD43fMUfdABVuOU24hGwRHA5Zo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
