@@ -1,20 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:motionminglee/Patient/WievPatient/iconButtonPages/messages.dart';
+import 'package:motionminglee/Patient/WievPatient/app_screens/HomePage.dart';
+import 'package:motionminglee/Patient/WievPatient/app_screens/add_appointments.dart';
+import 'package:motionminglee/Patient/WievPatient/app_screens/my_appointments.dart';
 import 'package:motionminglee/Patient/messages_patient.dart';
+import 'package:motionminglee/Wiev/Chat/chat_screen.dart';
 import 'package:motionminglee/Wiev/app_screens/HomePage.dart';
 import 'package:motionminglee/Wiev/app_screens/add_appointments.dart';
 import 'package:motionminglee/Wiev/app_screens/my_appointments.dart';
-import 'package:motionminglee/Wiev/Chat/chat_screen.dart';
 import 'package:motionminglee/components/color_content.dart';
 
-class BottomNavigationBarOzel extends StatefulWidget {
-  const BottomNavigationBarOzel({Key? key}) : super(key: key);
+class BottomNavigationBarOzelPatient extends StatefulWidget {
+  const BottomNavigationBarOzelPatient({Key? key}) : super(key: key);
 
   @override
-  State<BottomNavigationBarOzel> createState() => _BirBottomNavigationBarOzelState();
+  State<BottomNavigationBarOzelPatient> createState() => _BirBottomNavigationBarOzelState();
 }
 
-class _BirBottomNavigationBarOzelState extends State<BottomNavigationBarOzel> {
+class _BirBottomNavigationBarOzelState extends State<BottomNavigationBarOzelPatient> {
   ColorContents colorContents = ColorContents();
   int _secilenIndex = 0;
 
@@ -44,16 +46,16 @@ class _BirBottomNavigationBarOzelState extends State<BottomNavigationBarOzel> {
             label: 'Randevular',
           ),
           NavigationDestination(
-            icon: Icon(Icons.chat),
+            icon: Icon(Icons.person),
             label: 'Mesaj Gönder',
           ),
         ],
       ),
       body: <Widget>[
-        HomePage(),
-        AddAppointments(),
-        AppointmentListPage(),
-        const ChatScreen()
+        HomePagePatient(),
+        AddAppointmentsPatient(),
+        AppointmentsListPagePatient(),
+        ChatScreen()
       ][_secilenIndex],
     );
   }

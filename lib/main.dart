@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:motionminglee/Wiev/log_screens/doc_pat_page.dart';
 import 'package:motionminglee/Wiev/log_screens/loginPage.dart';
 
 void main() async{
@@ -43,6 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return LoginPageDeneme();
+    return DocPatientPage();
   }
 }
